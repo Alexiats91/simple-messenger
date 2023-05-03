@@ -3,7 +3,7 @@ import SendField from "../SendField/SendField";
 import styles from "./styles.module.css";
 import UserIcon from "../UserIcon/UserIcon";
 
-const CurrentMessagesList = ({messages, addMessage, currentUser, answer, isTyping}) => {
+const CurrentMessagesList = ({messages, addMessage, currentUser, answer}) => {
     const scrollRef = useRef(null);
     const messagesList = messages.map(m =>
         <div key={m.id} className={m.own ? styles.ownMessageContainer : styles.messageContainer}>
@@ -24,7 +24,6 @@ const CurrentMessagesList = ({messages, addMessage, currentUser, answer, isTypin
                 {messagesList}
                 <div ref={scrollRef}/>
             </div>
-            {isTyping && <h6>{currentUser.nickname} is typing...</h6>}
             <SendField answer={answer} addMessage={addMessage}/>
         </div>
     );

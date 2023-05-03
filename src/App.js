@@ -15,7 +15,6 @@ function App() {
     const [searchValue, setSearchValue] = useState('');
     const [filteredUsers, setFilteredUsers] = useState(users);
     const [messages, setMessages] = useState(initialMessages);
-    const [isTyping, setIsTyping] = useState(false);
     const addMessage = (newMessage) => {
         setMessages({...messages, ...messages[currentUser.id].push(newMessage)});
         setFilteredUsers(() =>
@@ -26,7 +25,6 @@ function App() {
                 return u;
             })
         )
-        setIsTyping(true);
     };
     const getRandomNumber = () => (Math.floor(Math.random() * 6) + 3) * 1000;
 
@@ -38,7 +36,6 @@ function App() {
                     const data = res.data;
                     const answerNorris = {id: Date.now(), own: false, publish: Date.now(), message: data.value};
                     addMessage(answerNorris);
-                    setIsTyping(false);
                 })
         }, getRandomNumber())
     }
@@ -76,7 +73,6 @@ function App() {
                         messages={messages[currentUser.id]}
                         addMessage={addMessage}
                         answer={answer}
-                        isTyping={isTyping}
                     />
                     : <h2>Choose any chat.</h2>
                 }
