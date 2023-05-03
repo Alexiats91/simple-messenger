@@ -1,0 +1,12 @@
+.searchUser {
+    padding: 20px 10px;
+    border-bottom: 1px solid darkgray;
+    background-color: lightgray;
+}
+.searchInput {
+    padding: 5px 15px;
+    outline: none;
+    border: 1px solid darkgray;
+    border-radius: 15px;
+    width: 100%;
+}

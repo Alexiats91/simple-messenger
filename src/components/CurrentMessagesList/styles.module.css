@@ -1,0 +1,68 @@
+.messagesList {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    row-gap: 7px;
+    margin-top: 7px;
+    width: 100%;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.messagesList::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+.messageContainer, .ownMessageContainer {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    max-width: 70%;
+    align-self: flex-start;
+    align-items: flex-start;
+}
+.ownMessageContainer{
+    align-self: flex-end;
+    align-items: flex-end;
+}
+.message, .ownMessage{
+    padding: 5px 15px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border-radius: 15px;
+    width: fit-content;
+}
+.ownMessage {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: black;
+}
+.messageDate, .ownMessageDate {
+    font-size: 10px;
+    color: #5b5b5b;
+    padding-top: 3px;
+    align-self: flex-start;
+}
+.ownMessageDate {
+    align-self: flex-end;
+}
+.currentMessagesList {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    height: 100%;
+}
+.currentUser {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    background-color: lightgray;
+    margin: -15px;
+    padding: 10px 15px;
+    border-bottom: 1px solid grey;
+}
+.currentUserName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}

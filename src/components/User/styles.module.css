@@ -1,0 +1,44 @@
+.user {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10px;
+    padding: 5px;
+    color: black;
+    border-bottom: 1px solid grey;
+    cursor: pointer;
+}
+.user.active {
+    background-color: #dfdfdf;
+}
+.user:hover {
+    background-color: #dfdfdf;
+}
+.userIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    max-width: min-content;
+}
+.nameAndMessage {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5x;
+    width: 100%;
+    overflow: hidden;
+}
+.name {
+
+}
+.lastMessage {
+    color: #616161;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 14px;
+}
+.messageDate {
+    font-size: 12px;
+    min-width: max-content;
+    flex-grow: 1.5;
+}

@@ -1,0 +1,15 @@
+.usersList {
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.usersList::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+.chatsTitle {
+    padding: 20px 15px;
+    border-bottom: 1px solid darkgray;
+}
