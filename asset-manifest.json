@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/simple-messenger/static/css/main.7e77c108.css",
+    "main.js": "/simple-messenger/static/js/main.4554a4bc.js",
+    "static/media/user_icon.png": "/simple-messenger/static/media/user_icon.b26055b5e48acebe10d7.png",
+    "index.html": "/simple-messenger/index.html",
+    "main.7e77c108.css.map": "/simple-messenger/static/css/main.7e77c108.css.map",
+    "main.4554a4bc.js.map": "/simple-messenger/static/js/main.4554a4bc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7e77c108.css",
+    "static/js/main.4554a4bc.js"
+  ]
+}
